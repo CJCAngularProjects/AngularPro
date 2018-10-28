@@ -1,11 +1,13 @@
 <div>
-    <form #userdata="ngForm" (ngSubmit)="onsubmit(userdata.value)">
-        NAME: <input type="text"   name="name" #NAME="ngModel" ngModel required class="form-control"> 
-        AGE:  <input type="number" name="age"  #AGE="ngModel"  ngModel required class="form-control">
-        CITY: <input type="text"   name="city" #CITY="ngModel" ngModel required class="form-control">
-        AREA: <input type="text"   name="area" #AREA="ngModel" ngModel required class="form-control"><br>
+    <form [formGroup]="userform" (ngSubmit)="onSubmitForm()">
 
-        <button type="submit" class="form-control btn btn-success">submit</button>
-        
+        NAME: <input type="text"   formControlName="name" required class="form-control"> 
+        AGE:  <input type="number" formControlName="age"  required class="form-control">
+        CITY: <input type="text"   formControlName="city" required class="form-control">
+        AREA: <input type="text"   formControlName="area" required class="form-control"><br>
+
+        <button type="submit" class="form-control btn btn-success">add record</button>
+        {{userform.value | json}}  
     </form>
 </div>
+

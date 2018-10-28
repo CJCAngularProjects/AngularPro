@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+
+.title{
+    color: crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: row wrap; 
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    font-family: 
+        'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, 
+        Verdana, 
+        sans-serif;
+}
+
+.registration-box{
+    border: 2px solid indianred;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.display-box{
+    border: 2px solid indianred;
+    border-radius: 5px;
+    padding: 10px;
+}

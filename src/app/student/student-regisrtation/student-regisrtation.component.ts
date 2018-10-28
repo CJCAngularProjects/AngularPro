@@ -12,4 +12,8 @@ export class StudentRegisrtationComponent implements OnInit {
   ngOnInit() {
   }
 
+  onsubmit(value: any) {
+    console.log(value);
+  }
+
 }

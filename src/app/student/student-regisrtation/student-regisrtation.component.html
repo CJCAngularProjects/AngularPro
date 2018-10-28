@@ -1,3 +1,11 @@
-<p>
-  student-regisrtation works!
-</p>
+<div>
+    <form #userdata="ngForm" (ngSubmit)="onsubmit(userdata.value)">
+        NAME: <input type="text"   name="name" #NAME="ngModel" ngModel required class="form-control"> 
+        AGE:  <input type="number" name="age"  #AGE="ngModel"  ngModel required class="form-control">
+        CITY: <input type="text"   name="city" #CITY="ngModel" ngModel required class="form-control">
+        AREA: <input type="text"   name="area" #AREA="ngModel" ngModel required class="form-control"><br>
+
+        <button type="submit" class="form-control btn btn-success">submit</button>
+        
+    </form>
+</div>

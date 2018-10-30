@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl,  FormBuilder } from '@angular/forms';
+import { StudentServiceService } from 'src/app/service/student-service.service';
+import { Student } from 'src/app/model/student';
+import { error } from 'protractor';
 
 
 
@@ -10,7 +13,9 @@ import { FormGroup, FormControl,  FormBuilder } from '@angular/forms';
 })
 export class StudentRegisrtationComponent {
 
-  constructor(private _formBuilder : FormBuilder) { }
+
+  constructor(private _formBuilder : FormBuilder,
+    private _studentServiceService : StudentServiceService) { }
   
   userform = this._formBuilder.group({
     name : [],
@@ -21,7 +26,7 @@ export class StudentRegisrtationComponent {
 
   
   onSubmitForm(){
-    console.log(this.userform.value);
+    this._studentServiceService.postStudentData(this.userform.value).subscribe();
   }
 
 

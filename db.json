@@ -1,0 +1,81 @@
+{
+  "Students": [
+    {
+      "id": 1,
+      "name": "pranay kohad",
+      "age": "25",
+      "city": "pune",
+      "area": "narhe"
+    },
+    {
+      "id": 2,
+      "name": "pawan kohad",
+      "age": "23",
+      "city": "amravati",
+      "area": "navsari"
+    },
+    {
+      "id": 3,
+      "name": "safg",
+      "age": 2134,
+      "city": "dfsg",
+      "area": "efg"
+    },
+    {
+      "id": 4,
+      "name": "aaa",
+      "age": 11,
+      "city": "sss",
+      "area": "ddd"
+    },
+    {
+      "id": 5,
+      "name": "ajay",
+      "age": 234,
+      "city": "latur",
+      "area": "sasd"
+    },
+    {
+      "id": 6,
+      "name": "xyz",
+      "age": "11",
+      "city": "delhi",
+      "area": "red fort"
+    },
+    {
+      "name": "xyz",
+      "age": "11",
+      "city": "delhi",
+      "area": "red fort",
+      "id": 7
+    },
+    {
+      "name": null,
+      "age": null,
+      "city": null,
+      "area": null,
+      "id": 8
+    },
+    {
+      "name": "akash",
+      "age": 25,
+      "city": "amravati ",
+      "area": "rajapeth",
+      "id": 9
+    },
+    {
+      "name": "samir ",
+      "age": 26,
+      "city": "pune",
+      "area": "vimannagar",
+      "id": 10
+    },
+    {
+      "name": "sushant",
+      "age": 23,
+      "city": "nanded",
+      "area": "guru",
+      "id": 11
+    }
+  ]
+}

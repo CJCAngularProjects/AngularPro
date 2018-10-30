@@ -3,7 +3,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: inherit;
-    border: 2px solid goldenrod;
+    border: 1px solid goldenrod;
     border-radius: 5px;
     margin-top: 20px; 
 }
@@ -30,7 +30,7 @@
 }
 
 .registration-box{
-    border: 2px solid indianred;
+    border: 1px solid indianred;
     border-radius: 5px;
     padding: 10px;
     flex: 1 2 200px;
@@ -38,7 +38,7 @@
 }
 
 .display-box{
-    border: 2px solid indianred;
+    border: 1px solid indianred;
     border-radius: 5px;
     padding: 10px;
     flex: 1 2 200px;

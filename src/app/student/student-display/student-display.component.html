@@ -1,3 +1,21 @@
-<p>
-  student-display works!
-</p>
+<div style="font-size: 15px; display: flex; justify-content: center;">
+
+  <table class="table table-hover">
+    <tr>
+       <th>Sr. No.</th>
+       <th>NAME</th>
+       <th>AGE</th>
+       <th>AREA</th>
+       <th>CITY</th> 
+       <th>DELETE</th>
+    </tr>
+    <tr *ngFor='let s_list of StudentList; let i1 = index'>
+      <td>{{i1+1}}</td>
+      <td>{{s_list.name}}</td>
+      <td>{{s_list.age}}</td>
+      <td>{{s_list.area}}</td>
+      <td>{{s_list.city}}</td>
+      <td><input type="button" value="Delete" (click)="deleteRecord()" class="btn btn-outline-danger" style="font-size: 10px"></td>
+    </tr>
+  </table>
+</div>

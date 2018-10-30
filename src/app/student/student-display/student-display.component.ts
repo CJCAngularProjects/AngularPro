@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentServiceService } from 'src/app/service/student-service.service';
+import { Student } from 'src/app/model/student';
 
 @Component({
   selector: 'app-student-display',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentDisplayComponent implements OnInit {
 
-  constructor() { }
+  public StudentList : Student[];
 
-  ngOnInit() {
+  constructor(private _studentServiceService:StudentServiceService) { }
+
+  ngOnInit() : void {
+    this._studentServiceService.getStudentData().subscribe(data => {
+      this.StudentList = data;
+    },
+      error => {
+        console.error('Error while getting student data. Stack: ', error);
+      }
+    );
+  }
+
+  deleteRecord(){
+    console.log("delete is called");
   }
 
 }
